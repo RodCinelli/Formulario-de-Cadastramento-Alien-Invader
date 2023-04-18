@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../imagens/alien2.png') no-repeat center ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    
+}
+
+.logo2 {
+    font-size: 1.2rem;
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+    width: 50%;
+}
+
+.box{
+    color: white;
+    position: absolute;
+    top: 52%;
+    left: 80%;
+    width: 65%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boxlogin{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 65%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+fieldset{
+    border: 3px solid rgb(60, 13, 148);
+    
+}
+legend{
+    border: 1px solid rgb(60, 13, 148);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(60, 13, 148);
+    border-radius: 30px;
+}
+.inputBox{
+    font-size: 1.0rem;
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+}
+.inputUser{
+    font-size: 1.0rem;
+    font-family: 'Kaushan Script', cursive;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(60, 13, 148);
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    font-size: 1.0rem;
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(60, 13, 148);
+}
+
+.date{
+font-size: 1.0rem;
+font-family: 'Kaushan Script', cursive;
+}
+
+.sexo{
+    font-size: 1.0rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#data_nascimento{
+    font-size: 1.0rem;
+    font-family: 'Kaushan Script', cursive;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(39, 28, 61), rgb(60, 13, 148));
+    width: 80%;
+    border: none;
+    padding: 10px;
+    color: black;
+    font-size: 23px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(60, 13, 148), rgb(39, 28, 61));
+}
+
+.centralizar{
+    text-align: center;
+}
+
+@media (max-width: 989px){
+    .box{
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    }
+
+    #navbar-container {
+       display: none;
+    }
+}
